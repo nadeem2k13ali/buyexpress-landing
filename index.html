@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BuyExpress — Local Shopping Made Easy</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#2a9d8f; /* teal accent */
+      --muted:#6c757d;
+    }
+    body{font-family: Inter, Roboto, Arial, sans-serif;}
+    .hero{background:linear-gradient(180deg, rgba(42,157,143,0.06), rgba(42,157,143,0.02));padding:60px 0}
+    .badge-pill{background:var(--accent);color:#fff}
+    .app-buttons img{height:44px}
+    .feature-icon{width:64px;height:64px;background:#fff;border-radius:14px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    .screenshot{border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+    .footer{background:#0f1724;color:#cbd5e1;padding:32px 0}
+    .download-hero{background:linear-gradient(90deg, rgba(42,157,143,0.12), rgba(16,185,129,0.06));padding:36px;border-radius:12px}
+    @media (max-width:767px){.hero{padding:36px 0}}
+  
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(53%) sepia(88%) saturate(7484%) hue-rotate(2deg) brightness(102%) contrast(105%);
+}
+
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+  <img src="https://res.cloudinary.com/dynjtawrx/image/upload/v1757349208/wfy7m1r5p6mmzmd3vsve.png" 
+       alt="BuyExpress Logo" 
+       style="height:34px; margin-right:8px;">
+  BuyExpress
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#screens">Screens</a></li>
+        <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <span class="badge badge-pill mb-3">Now in your City</span>
+        <h1 class="display-6 fw-bold">BuyExpress — Shop Smarter, Shop Local</h1>
+        <p class="text-muted">Your trusted local shopping app. Explore nearby shops, order groceries, daily essentials, or favorite items right from your phone.</p>
+
+        <div class="d-flex gap-3 align-items-center mt-4 app-buttons">
+          <a href="https://play.google.com/store/apps/details?id=com.app.phatak.phatakbazaar" class="d-inline-block me-2"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"></a>
+          <a href="https://play.google.com/store/apps/details?id=com.app.phatak.phatakbazaar" class="d-inline-block"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store"></a>
+        </div>
+
+        <div class="mt-4">
+          <button class="btn btn-outline-secondary me-2" data-bs-toggle="modal" data-bs-target="#videoModal">▶ Watch Intro</button>
+          <a href="#download" class="btn btn-primary" style="background:var(--accent);border-color:var(--accent)">Download Now</a>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 text-center mt-4 mt-lg-0">
+        <div class="position-relative d-inline-block">
+          <img src="https://res.cloudinary.com/dtatefvdv/image/upload/v1757187581/IMG-20250907-WA0003_bnu7md.jpg
+?auto=format&fit=crop&w=600&q=60" alt="phone" class="img-fluid screenshot" style="max-width:320px">
+          <div class="position-absolute top-50 start-50 translate-middle">
+            <button class="btn btn-sm btn-light rounded-circle shadow" data-bs-toggle="modal" data-bs-target="#videoModal">▶</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO MODAL -->
+<div class="modal fade" id="videoModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <div class="ratio ratio-16x9">
+         <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/9N4kj626lFM" 
+        title="YouTube Shorts player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+    </iframe>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section id="features" class="py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h3 class="fw-bold">Why Choose BuyExpress?</h3>
+      <p class="text-muted">We make your shopping simple and reliable.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4 text-center">
+        <div class="feature-icon mx-auto mb-3">🛒</div>
+        <h5 class="fw-bold">Local Shops in One Place</h5>
+        <p class="text-muted">Easily explore shops near you and see their products instantly.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="feature-icon mx-auto mb-3">⚡</div>
+        <h5 class="fw-bold">Fast Orders</h5>
+        <p class="text-muted">Quick checkout and seamless experience for your daily needs.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="feature-icon mx-auto mb-3">💸</div>
+        <h5 class="fw-bold">Best Prices</h5>
+        <p class="text-muted">Transparent pricing and exclusive local deals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCREENSHOTS -->
+<section id="screens" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h3 class="fw-bold">App Preview</h3>
+      <p class="text-muted">See how BuyExpress looks before downloading.</p>
+    </div>
+
+    <div id="carouselScreens" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active text-center">
+          <img src="https://res.cloudinary.com/dtatefvdv/image/upload/v1757187768/WhatsApp_Image_2025-09-07_at_00.42.21_4384997c_kkktzf.jpg?auto=format&fit=crop&w=400&q=60" class="d-block mx-auto screenshot" style="max-width:260px">
+        </div>
+        <div class="carousel-item text-center">
+          <img src="https://res.cloudinary.com/dtatefvdv/image/upload/v1757187581/IMG-20250907-WA0003_bnu7md.jpg?auto=format&fit=crop&w=400&q=60" class="d-block mx-auto screenshot" style="max-width:260px">
+        </div>
+        <div class="carousel-item text-center">
+          <img src="https://res.cloudinary.com/dtatefvdv/image/upload/v1757187632/IMG-20250907-WA0004_kb7oxm.jpg?auto=format&fit=crop&w=400&q=60" class="d-block mx-auto screenshot" style="max-width:260px">
+        </div>
+        <div class="carousel-item text-center">
+          <img src="https://res.cloudinary.com/dtatefvdv/image/upload/v1757187598/IMG-20250907-WA0002_zoz7om.jpg?auto=format&fit=crop&w=400&q=60" class="d-block mx-auto screenshot" style="max-width:260px">
+        </div>
+
+
+<div class="carousel-item text-center">
+          <img src="https://res.cloudinary.com/dtatefvdv/image/upload/v1757187581/IMG-20250907-WA0005_h7czb5.jpg?auto=format&fit=crop&w=400&q=60" class="d-block mx-auto screenshot" style="max-width:260px">
+        </div>
+
+<div class="carousel-item text-center">
+          <img src="https://res.cloudinary.com/dtatefvdv/image/upload/v1757187581/IMG-20250907-WA0001_azaboo.jpg?auto=format&fit=crop&w=400&q=60" class="d-block mx-auto screenshot" style="max-width:260px">
+        </div>
+
+<div class="carousel-item text-center">
+          <img src="https://res.cloudinary.com/dtatefvdv/image/upload/v1757187580/IMG-20250907-WA0006_zzfzpy.jpg?auto=format&fit=crop&w=400&q=60" class="d-block mx-auto screenshot" style="max-width:260px">
+        </div>
+
+<div class="carousel-item text-center">
+          <img src="https://res.cloudinary.com/dtatefvdv/image/upload/v1757187768/WhatsApp_Image_2025-09-07_at_00.42.20_32e00920_bgazkb.jpg?auto=format&fit=crop&w=400&q=60" class="d-block mx-auto screenshot" style="max-width:260px">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselScreens" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselScreens" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD CTA -->
+<section id="download" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <h4 class="fw-bold">Download BuyExpress</h4>
+        <p class="text-muted">Order groceries, household items, and much more from your local shops. Available on Android and iOS.</p>
+
+        <div class="d-flex gap-3 mt-3">
+          <a href="#" class="btn btn-light border"> <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" style="height:38px"></a>
+          <a href="#" class="btn btn-light border"> <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" style="height:38px"></a>
+        </div>
+
+      </div>
+      <div class="col-md-5 text-md-end mt-4 mt-md-0">
+        <div class="download-hero d-inline-block text-start">
+          <strong>Latest Version</strong>
+          <p class="mb-0 text-muted">v1.0 — Released: September 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer bg-dark text-light py-4 mt-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left side -->
+      <div class="col-md-6 mb-3 mb-md-0">
+        <h5 class="fw-bold text-white">
+		 <img src="https://res.cloudinary.com/dynjtawrx/image/upload/v1757349208/wfy7m1r5p6mmzmd3vsve.png" alt="BuyExpress Logo" style="height:34px; margin-right:8px;"> BuyExpress</h5>
+        <p class="text-white mb-0">
+          A simple and powerful app to connect local shops with customers in one place.
+        </p>
+      </div>
+      
+      <!-- Right side -->
+      <div class="col-md-6 text-md-end">
+        <small class="text-white mb-0">© 2025 BuyExpress. All rights reserved.</small>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
